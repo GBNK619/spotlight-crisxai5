@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Spotlight @crisxai5</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1600px; height: 900px; overflow: hidden; }
+  body {
+    font-family: "Liberation Sans", "DejaVu Sans", Arial, Helvetica, sans-serif;
+    background:
+      radial-gradient(1100px 620px at 50% 38%, rgba(0, 229, 255, 0.16), rgba(0, 229, 255, 0) 62%),
+      linear-gradient(150deg, #0a1230 0%, #050914 55%, #01020a 100%);
+    color: #f4f8ff;
+    position: relative;
+  }
+  /* faint dot grid, abstract decoration */
+  .dots {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(120, 200, 255, 0.13) 2px, transparent 2.6px);
+    background-size: 44px 44px;
+  }
+  /* concentric rings behind the handle */
+  .rings {
+    position: absolute; left: 50%; top: 400px; transform: translate(-50%, -50%);
+    width: 760px; height: 760px; border-radius: 50%;
+    border: 2px solid rgba(0, 229, 255, 0.14);
+    box-shadow: 0 0 0 70px rgba(0, 229, 255, 0.045), 0 0 0 150px rgba(0, 229, 255, 0.028), 0 0 0 240px rgba(0, 229, 255, 0.016);
+  }
+  .frame {
+    position: absolute; inset: 34px;
+    border: 2px solid rgba(0, 229, 255, 0.35);
+    border-radius: 28px;
+  }
+  .content {
+    position: relative; z-index: 2;
+    height: 900px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 70px 90px 64px;
+  }
+  .label {
+    font-size: 33px; font-weight: 700; letter-spacing: 10px;
+    color: #00e5ff; text-transform: uppercase;
+    border: 2px solid rgba(0, 229, 255, 0.55); border-radius: 999px;
+    padding: 14px 34px 14px 44px; margin-bottom: 58px;
+    background: rgba(0, 229, 255, 0.06);
+    white-space: nowrap;
+  }
+  .handle {
+    font-size: 196px; font-weight: 800; line-height: 1.02; letter-spacing: -2px;
+    color: #ffffff; text-shadow: 0 0 46px rgba(0, 229, 255, 0.45);
+    white-space: nowrap;
+  }
+  .handle .at { color: #00e5ff; }
+  .headline {
+    margin-top: 40px;
+    font-size: 88px; font-weight: 800; letter-spacing: 6px; line-height: 1.08;
+    color: #ffe9a8;
+    white-space: nowrap;
+  }
+  .subline {
+    margin-top: 30px;
+    font-size: 43px; font-weight: 600; letter-spacing: 2px;
+    color: #c9d8f2;
+    white-space: nowrap;
+  }
+  .pill {
+    margin-top: 62px;
+    font-size: 37px; font-weight: 800; letter-spacing: 1px;
+    color: #02141c; background: linear-gradient(90deg, #00e5ff, #4dd8ff);
+    border-radius: 999px; padding: 20px 52px;
+    box-shadow: 0 10px 44px rgba(0, 229, 255, 0.35);
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+  <div class="dots"></div>
+  <div class="rings"></div>
+  <div class="frame"></div>
+  <div class="content">
+    <div class="label">Spotlight — Must-Follow</div>
+    <div class="handle"><span class="at">@</span>crisxai5</div>
+    <div class="headline">AI &amp; CRYPTO EXPERT</div>
+    <div class="subline">AI Agents · Crypto Insights · Web3 Innovation</div>
+    <div class="pill">Follow for daily alpha</div>
+  </div>
+</body>
+</html>
